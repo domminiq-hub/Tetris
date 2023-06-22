@@ -1,17 +1,61 @@
-  /* Stylizacja planszy Tetris */
-  .board {
-    display: grid;
-    grid-template-columns: repeat(10, 30px);
-    grid-template-rows: repeat(20, 30px);
-    width: 300px;
-    height: 600px;
-    border: 1px solid #000;
-  }
+/* Stylize the Tetris board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(20, 30px);
+  width: 300px;
+  height: 600px;
+  border: 1px solid #000;
+}
 
-  .cell {
-    border: 1px solid #ccc;
-  }
+.cell {
+  border: 1px solid #ccc;
+}
 
-  .filled {
-    background-color: #000;
-  }
+.filled {
+  background-color: #000;
+}
+
+#start {
+  width: 200%;
+  height: 100%;
+  cursor: pointer;
+  font-family: Verdana;
+  background-color: #fff;
+  border-color: #000;
+  margin-top: 900%;
+  margin-left: 400%;
+}
+
+#app {
+  margin-left: calc(50% - 300px);
+  display: flex;
+}
+
+#scoreboard {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(20, 30px);
+  width: 300px;
+  height: 600px;
+  border: 1px solid #000;
+}
+
+.label {
+  margin-top: 1400%;
+  width: 300%;
+  margin-left: -100%;
+}
+
+#score {
+  width: 300%;
+}
+
+#nextshape {
+  margin-top: 1500%;
+  width: 400%;
+  height: 400%;
+  display: grid;
+  grid-template-columns: repeat(4, 30px);
+  grid-template-rows: repeat(4, 30px);
+}
